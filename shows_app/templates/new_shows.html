@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Show PAge</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/new_shows_styles.css' %}">
+    <script src="{% static 'js/new_shows_script.js' %}"></script>
+</head>
+<body>
+    <div id="container">
+        <a href="/shows">Go Back</a>
+        <h1>You have created a New Show</h1>
+        <ul>
+            <li>Title: {{title}}</li>
+            <li>Network: {{net}}</li>
+            <li>Release Date: {{release}}</li>
+            <li>Description: {{desc}}</li>
+        
+        </ul>
+        
+        <p>Last Updated: </p>
+        <a href="edit_shows.html">Edit</a>
+        <a href="index.html">Delete</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewing All Shows</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/all_shows_styles.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+    <script src="{% static 'js/all_shows_script.js' %}"></script>
+</head>
+<body>
+   
+    <div id="container">
+        <h1>All The Shows</h1>
+
+        <table id="table" data-simplebar>
+            <tr>
+                <th class="th1">Id</th>
+                <th class="th2">Title</th>
+                <th class="th3">Network</th>
+                <th class="th4">Release Date</th>
+                <th class="th5">Actions</th>
+            </tr>
+            
+            {% for show in all_shows %}
+            <tr>
+                <td>{{ show.id }}</td>
+                <td>{{ show.title }}</td>
+                <td>{{ show.network }}</td>
+                <td>{{ show.release }}</td>
+                <td><a href="new_shows.html">Show</a></td>
+                <td><a href="edit_shows.html">Edit</a></td>
+                <td><a href="index.html">Delete</a></td>
+            </tr>    
+            {% endfor %}   
+        </table>
+        <aside>
+
+        </aside>
+
+        <a class="button" href="index.html">Add a New Show</a>
+    </div>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+</body>
+</html>

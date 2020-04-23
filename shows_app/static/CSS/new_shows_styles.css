@@ -1,0 +1,17 @@
+#container {
+    width: 450px;
+    height: 500px;
+    margin: 0px auto;
+    padding: 10px;
+    background: linear-gradient(129deg, rgba(79,54,54,1) 0%, rgba(88,83,83,1) 100%);
+}
+
+#container a {
+    display: block;
+    position: relative;
+    color: lightblue;    
+}
+
+#container h1 {
+    text-align: center;
+}

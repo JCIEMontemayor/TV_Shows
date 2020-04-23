@@ -1,0 +1,79 @@
+#Container { 
+    width: 450px;
+    height: 500px;
+    margin: 0px auto;
+    padding: 10px;
+    background: linear-gradient(129deg, rgba(79,54,54,1) 0%, rgba(88,83,83,1) 100%);
+}
+
+#Container a {
+    display: block;
+    position: relative;
+    color: lightblue;    
+}
+
+#Container h1 {
+    text-align: center;
+}
+
+#Container form {
+    display: block;
+    width: 400px;
+    height: 350px;
+    background: linear-gradient(129deg, rgba(32,43,28,1) 0%, rgba(145,101,78,1) 100%);
+    margin-left: 15px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.p1 {
+    display: block;
+    width: 200px;
+    position: relative;
+    left: 115px;
+}
+
+.title {
+    border: 1px solid black;
+}
+
+.p2 {
+    display: block;
+    position: relative;
+    left: 15px;
+}
+
+.net {
+    border: 1px solid black;
+}
+
+.release {
+    border: 1px solid black;
+}
+
+.p3 {
+    display: block;
+    width: 400px;
+    position: relative;
+    /* left: 90px; */
+    text-align: center;
+}
+
+.desc {
+    display: block;
+    width: 393px;
+    height: 50px;
+    margin-top: 5px;
+    border: 2px solid black;
+}
+
+.button {
+    display: block;
+    width: 55px;
+    height: 25px;
+    background-color: grey;
+    position: relative;
+    left: 175px;
+    top: 20px;
+    border: 2px solid black;
+}

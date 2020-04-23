@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Show</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/tv_shows_styles.css' %}">
+    <script src="{% static 'js/tv_shows_script.js' %}"></script>
+
+</head>
+
+<body>
+
+    <div id="Container">
+
+        <a class="link" href="/shows">Go Back</a>
+
+        <h1>Add your New Show here!</h1>
+        <form action="/register" method=POST>
+            {% csrf_token %}
+            <p class="p1">Title: <input class="title" type="text" name="title"></p>
+            <p class="p2">Network: <input class="net" type="text" name="net">
+            Release: <input class="release" type="date" name="release">
+            </p>
+            <p class="p3">Description: <input class="desc" type="text" name="desc"></p>
+            <input class="button" type="submit" value="Create">
+
+        </form>
+    </div>
+    
+</body>
+</html>
